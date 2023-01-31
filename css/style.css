@@ -41,7 +41,7 @@ nav {
   color: snow;
   font-family: 'Lora', serif;
   position: relative;
-  padding: 15% 0 0 15%;
+  padding: 10% 0 0 15%;
 }
 
 .hello {
@@ -84,8 +84,8 @@ nav {
 }
 
 /* O AUTOR */
-#galaxy {
-  background-image: url(../images/galaxy.jpg);
+#desk {
+  background-image: url(../images/desk.jpg);
     background-size: cover;
     background-position: center;
     height: 50vh;
@@ -113,8 +113,8 @@ nav {
 
 /* CONTATO */
 #placeholder {
-  background-color: darkcyan;
+  background-image: url(../images/pen.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 50vh;
 }
