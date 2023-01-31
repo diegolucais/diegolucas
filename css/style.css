@@ -32,8 +32,33 @@ nav {
 }
 
 /* Footer */
+.footer {
+  background-color: #F8F9FA;
+  padding: 40px 0;
+}
+
+.social {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 10px;
+  opacity: 0.8;
+}
+
+.social > a:hover {
+  opacity: 1;
+}
+
+.icon-footer {
+  width: 2em;
+}
+
 .copyright {
-  margin: 50px auto 50px auto;
+  font-size: 1em;
+  margin: 1em 0 0 0;
   text-align: center;
 }
 
@@ -70,8 +95,8 @@ nav {
 
 .icon {
   filter: invert(100);
-  margin: 0 1em 0 0;
-  width: 1.5rem;
+  margin: 1em 1em 0 0;
+  width: 1.5em;
 }
 
 /* LIVROS */
@@ -104,8 +129,8 @@ nav {
 }
 
 .diego {
-  width: 20em;
-  padding-bottom: 25px;
+  width: 18.5em;
+  padding-bottom: 2em;
 }
 
 .welcome {
