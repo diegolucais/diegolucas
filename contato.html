@@ -17,7 +17,7 @@
     <title>Diego Lucas | Contato</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
     <!-- Navbar -->
     <nav id="navbar" class="navbar bg-body-tertiary sticky-top navbar-expand-lg">
         <div class="container">
@@ -34,7 +34,7 @@
                         <a class="nav-link" href="livros.html">LIVROS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">O AUTOR</a>
+                        <a class="nav-link" href="oautor.html">O AUTOR</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="contato.html">CONTATO</a>
@@ -46,10 +46,36 @@
     <!-- Animate opening <div> -->
     <div class="animate__animated animate__fadeIn">
         <!-- Placeholder -->
-        <div id="placeholder"></div>
+        <div id="pen"></div>
         <!-- Contato -->
-        <div id="contato" class="container-fluid">
-            
+        <div id="contato" class="container">
+            <h1 class="text-center">Vamos Conversar</h1>
+            <p class="text-center">Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Digite seu nome" />
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu email" />
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    
+                </div>
+            </div>
         </div>
         <!-- Footer -->
         <div class="footer">
