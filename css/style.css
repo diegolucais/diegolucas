@@ -155,7 +155,7 @@ nav {
 .diego {
   outline-color: #5BC0F8;
   outline-style: inset;
-  width: 20em;
+  width: 22em;
 }
 
 /******** CONTATO ********/
@@ -168,4 +168,11 @@ nav {
 
 #contato {
   margin: 5em auto 5em auto;
+}
+
+.notepad {
+  filter: grayscale(50);
+  outline-style: inset;
+  outline: 5px inset black;
+  width: 34em;
 }
