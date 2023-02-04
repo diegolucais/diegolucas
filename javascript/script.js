@@ -1,4 +1,4 @@
-// Typewriter - Home page
+// Typewriter
 const instance = new Typewriter('#typewriter', {
     loop: true,
     delay: 50,
