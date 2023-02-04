@@ -125,7 +125,7 @@ nav {
   font-size: 0.8em;
 }
 
-.título {
+.heading {
   font-family: 'Lato', sans-serif;
 }
 
@@ -146,10 +146,6 @@ nav {
 
 #autor {
   margin: 5em auto 5em auto;
-}
-
-.welcome {
-  font-family: 'Lato', sans-serif;
 }
 
 .diego {
@@ -174,5 +170,5 @@ nav {
   filter: grayscale(50);
   outline-style: inset;
   outline: 5px inset black;
-  width: 34em;
+  width: 30em;
 }
