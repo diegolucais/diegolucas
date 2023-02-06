@@ -117,24 +117,16 @@ nav {
   height: 50vh;
 }
 
-#livros {
-  margin: 5em auto 5em auto;
-}
-
 .legenda {
   font-family: 'Lato', sans-serif;
   font-size: 0.8em;
-}
-
-.heading {
-  font-family: 'Lato', sans-serif;
 }
 
 .escaravelhos-capa {
   outline-style: inset;
   outline-color: grey;
   outline-width: 5px;
-  width: 20em;
+  width: 60%;
 }
 
 /******** O AUTOR ********/
@@ -145,14 +137,10 @@ nav {
   height: 50vh;
 }
 
-#autor {
-  margin: 5em auto 5em auto;
-}
-
 .diego {
   outline-color: #5BC0F8;
   outline-style: inset;
-  width: 22em;
+  width: 60%;
 }
 
 /******** CONTATO ********/
@@ -163,13 +151,23 @@ nav {
   height: 50vh;
 }
 
-#contato {
-  margin: 5em auto 5em auto;
+.contato {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 4rem;
 }
 
 .notepad {
   filter: grayscale(50);
   outline-style: inset;
   outline: 5px inset black;
-  width: 30em;
+  width: 100%;
+}
+
+/******** LIVROS / O AUTOR / CONTATO ********/
+.heading {
+  font-family: 'Lato', sans-serif;
+}
+
+#livros, #autor, #contato {
+  margin: 5em auto 5em auto;
 }
