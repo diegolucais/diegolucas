@@ -6,10 +6,79 @@
 /* General Styling */
 body {
   font-family: 'Lora', serif;
+  text-align: justify;
 }
 
-p {
-  text-align: justify;
+/* Animation */
+:root {
+  --duration: 1s;
+}
+
+.animation {
+  animation-duration: 1s;
+  animation-duration: var(--duration);
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: var(--duration);
+  -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0
+  }
+
+  to {
+      opacity: 1
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  -webkit-animation-name: fade-in;
+}
+
+@-webkit-keyframes fade-in-down {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+      -webkit-transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+  }
+}
+
+@keyframes fade-in-down {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+      -webkit-transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+  }
+}
+
+.fade-in-down {
+  animation-name: fade-in-down;
+  -webkit-animation-name: fade-in-down;
 }
 
 /* Navbar */
