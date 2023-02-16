@@ -178,6 +178,27 @@ nav {
   opacity: 0.8;
 }
 
+/* Media Query: Home Page */
+@media (max-width: 740px) {
+  .title {
+    padding: 5% 0 0 0;
+    position: auto;
+    text-align: center;
+  }
+
+  .hello {
+    font-size: 1.5em;
+  }
+  
+  .name {
+    font-size: 4em;
+  }
+  
+  #typewriter {
+    font-size: 1em;
+  }
+}
+
 /******** LIVROS ********/
 #writer {
   background-image: url(../images/writer.jpg);
