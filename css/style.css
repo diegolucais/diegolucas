@@ -23,7 +23,7 @@ body {
   -webkit-animation-fill-mode: both;
 }
 
-@-webkit-keyframes fade-in {
+@-webkit-keyframes fadeIn {
   0% {
       opacity: 0
   }
@@ -33,7 +33,7 @@ body {
   }
 }
 
-@keyframes fade-in {
+@keyframes fadeIn {
   0% {
       opacity: 0
   }
@@ -44,11 +44,11 @@ body {
 }
 
 .fade-in {
-  animation-name: fade-in;
-  -webkit-animation-name: fade-in;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
 }
 
-@-webkit-keyframes fade-in-down {
+@-webkit-keyframes fadeInDown {
   0% {
       opacity: 0;
       transform: translate3d(0, -100%, 0);
@@ -62,7 +62,7 @@ body {
   }
 }
 
-@keyframes fade-in-down {
+@keyframes fadeInDown {
   0% {
       opacity: 0;
       transform: translate3d(0, -100%, 0);
@@ -77,8 +77,8 @@ body {
 }
 
 .fade-in-down {
-  animation-name: fade-in-down;
-  -webkit-animation-name: fade-in-down;
+  animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
 }
 
 /* Navbar */
@@ -101,12 +101,13 @@ nav {
   margin-left: 2rem;
 }
 
-.home {
-  text-shadow: 1px 1px 10px black, 1px 1px 10px black;
+.offcanvas-title {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-.navbar-toggler {
-  filter: invert(100);
+.menu {
+  text-shadow: 1px 1px 10px black, 1px 1px 10px black;
 }
 
 /* Footer */
