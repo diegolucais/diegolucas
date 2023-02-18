@@ -98,16 +98,12 @@ nav {
 .nav-link {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-left: 2rem;
+  margin-left: 1.5em;
 }
 
 .offcanvas-title {
   font-size: 2rem;
   font-weight: 800;
-}
-
-.menu {
-  text-shadow: 1px 1px 10px black, 1px 1px 10px black;
 }
 
 /* Footer */
