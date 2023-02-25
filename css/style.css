@@ -9,7 +9,7 @@ body {
   text-align: justify;
 }
 
-/* Animation */
+/* Animation on load */
 :root {
   --duration: 1s;
 }
@@ -120,8 +120,8 @@ nav {
 
 .icon-footer {
   display: inline-block;
-  margin: 0 10px;
   filter: invert(100);
+  margin: 0 10px;
   width: 1.5em;
 }
 
@@ -176,7 +176,7 @@ nav {
 }
 
 /* Media Query: Home Page */
-@media (max-width: 740px) {
+@media (max-width: 767px) {
   .title {
     padding: 5% 0 0 0;
     position: auto;
@@ -230,10 +230,6 @@ nav {
   width: 60%;
 }
 
-.dark-background {
-  background-color:darkred ;
-}
-
 /******** CONTATO ********/
 #pen {
   background-image: url(../images/pen.jpg);
@@ -242,16 +238,20 @@ nav {
   height: 50vh;
 }
 
-.contato {
+.talk {
   font-family: 'Lato', sans-serif;
-  margin-bottom: 4rem;
+  line-height: 2;
+}
+
+#contato p {
+  margin-bottom: 4em;
 }
 
 .notepad {
   filter: grayscale(50);
   outline-style: inset;
   outline: 5px inset black;
-  width: 100%;
+  width: 90%;
 }
 
 /******** LIVROS / O AUTOR / CONTATO ********/
