@@ -9,6 +9,12 @@ body {
   text-align: justify;
 }
 
+hr {
+  border-top: 4px dotted black;
+  margin: 1em auto 1em auto;
+  width: 20%;
+}
+
 /* Animation on load */
 :root {
   --duration: 1s;
@@ -216,6 +222,10 @@ nav {
   width: 60%;
 }
 
+.btn-outline-dark {
+  margin-top: 2.5em;
+}
+
 /******** O AUTOR ********/
 #desk {
   background-image: url("../images/desk.jpg");
@@ -227,7 +237,7 @@ nav {
 .diego {
   outline-color: #5BC0F8;
   outline-style: inset;
-  width: 60%;
+  width: 50%;
 }
 
 /******** CONTATO ********/
@@ -240,7 +250,6 @@ nav {
 
 .talk {
   font-family: 'Lato', sans-serif;
-  line-height: 2;
 }
 
 #contato p {
