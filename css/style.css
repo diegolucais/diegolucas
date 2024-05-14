@@ -296,7 +296,7 @@ span {
 
 /* contact section design */
 .contact {
-    min-height:  auto;
+    min-height: auto;
     padding-bottom: 7rem;
 }
 
@@ -353,6 +353,7 @@ span {
 .contact form .input-box .input-field input::placeholder,
 .contact form .textarea-field textarea::placeholder {
     color: var(--text-color);
+    opacity: 40%;
 }
 
 .contact form .textarea-field {
