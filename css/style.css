@@ -272,8 +272,8 @@ span {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: .2rem solid var(--second-bg-color);
-    border-bottom: .2rem solid var(--second-bg-color);
+    border-top: .2rem solid var(--bg-color);
+    border-bottom: .2rem solid var(--bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color);
 }
@@ -288,7 +288,7 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem 10% 3rem;
 }
 
 .btn-box.btns {
