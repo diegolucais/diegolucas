@@ -165,9 +165,9 @@ section {
 }
 
 .social {
+    display: flex;
     position: absolute;
     bottom: 4rem;
-    display: flex;
 }
 
 .social a {
@@ -526,20 +526,27 @@ span {
         display: flex;
         flex-direction: column;
     }
-    
-    .social a {
-        width: 38px;
-        height: 38px;
-    }
 }
 
 @media (max-width: 462px) {
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .home-content h2 {
-        font-size: 4.2rem;
+        font-size: 3.5rem;
     }
     
     .home-content h1 {
-        font-size: 5.2rem;
+        font-size: 5rem;
+    }
+
+    .social {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .contact form .input-box .input-field {
@@ -555,30 +562,9 @@ span {
         margin-top: 2rem;
         text-align: center;
     }
-}
-
-@media (max-width: 371px) {
-    .home {
-        justify-content: center;
-    }
-
-    .home-content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-content h2 {
-        font-size: 3.8rem;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-
+    
     .home-content .text-animate {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
