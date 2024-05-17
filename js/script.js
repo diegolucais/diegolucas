@@ -41,7 +41,7 @@ navbar.classList.remove('active');
 }
 
 // typewriter
-const instance = new Typewriter('.text-animate', {
+const instance = new Typewriter('#typewriter', {
   loop: true,
   delay: 60,
 });
@@ -52,7 +52,7 @@ instance.typeString('Escritor')
   .typeString('Autor de As Aventuras de Alex Canyon')
   .pauseFor(1000)
   .deleteAll(10)
-  .typeString('Os Escaravelhos de Seth - Outubro de 2024')
+  .typeString('Os Escaravelhos de Seth - Em Breve!')
   .pauseFor(1000)
   .deleteAll(10)
   .start();
