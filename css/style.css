@@ -28,6 +28,12 @@ body {
     color: var(--text-color);
 }
 
+/* general styling */
+section {
+    min-height: 100vh;
+    padding: 10rem 10% 10rem;
+}
+
 /* header design */
 .header {
     position: fixed;
@@ -74,23 +80,17 @@ body {
 }
 
 /* home section design */
-section {
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
-}
-
 .home {
     display: flex;
     align-items: center;
-    padding: 0 9%;
-    background: url(../images/home.jpg) no-repeat;
+    padding: 0 10%;
+    background: url(../images/imagination.jpeg) center no-repeat;
+    background-color: rgba(8, 27, 41, 0.5);
     background-size: cover;
-    background-position: center;
 }
 
 .home-content {
     max-width: 60rem;
-    z-index: 99;
 }
 
 .home-content h2 {
@@ -207,21 +207,6 @@ section {
     width: 100%;
 }
 
-.home-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-}
-
-.home-img:hover {
-    background: var(--bg-color);
-    opacity: .8;
-}
-
 /* books section design */
 .books {
     background-color: var(--second-bg-color);
@@ -289,7 +274,7 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 10% 3rem;
+    margin: 2rem 15% 3rem;
 }
 
 .btn-box.btns {
@@ -508,12 +493,6 @@ span {
     .navbar.active a {
         transform: translateX(0);
         transition-delay: .25s;
-    }
-
-    .home-img {
-        pointer-events: none;
-        background: var(--bg-color);
-        opacity: .6;
     }
 }
 
