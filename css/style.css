@@ -12,8 +12,8 @@
 }
 
 :root {
-    --bg-color: #081b29;
-    --second-bg-color:#112e42;
+    --bg-color: #05121E;
+    --second-bg-color: #051B2C;
     --text-color:#ededed;
     --main-color:#00abf0;
 }
@@ -72,6 +72,7 @@ section {
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
+    text-shadow: 2px 2px 2px black;
 }
 
 .navbar a:hover,
@@ -84,9 +85,26 @@ section {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    background: url(../images/imagination.jpeg) center no-repeat;
-    background-color: rgba(8, 27, 41, 0.5);
+    background: url(../images/home.jpeg) center no-repeat;
     background-size: cover;
+    position: relative;
+    text-shadow: 2px 2px 2px black;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(203, 36%, 4%, 0.5);
+    z-index: 1;
+}
+
+.home > * {
+    position: relative;
+    z-index: 2;
 }
 
 .home-content {
