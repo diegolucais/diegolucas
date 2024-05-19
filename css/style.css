@@ -296,7 +296,7 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 15% 3rem;
+    margin: 2rem 10% 2rem;
 }
 
 .btn-box.btns {
@@ -504,10 +504,6 @@ span {
         font-size: 50%;
     }
 
-    .home {
-        display: relative;
-    }
-
     .home-content {
         display: flex;
         align-items: center;
@@ -527,8 +523,7 @@ span {
         font-size: 2rem;
     }
 
-    .home-content p,
-    .about-content p {
+    .home-content p {
         font-size: 1.8rem;
     }
     
@@ -540,7 +535,11 @@ span {
     .about-content h3 {
         font-size: 2.2rem;
     }
-    
+
+    .about-content p {
+        font-size: 1.8rem;
+    }
+
     .contact form .input-box .input-field {
         width: 100%;
     }
