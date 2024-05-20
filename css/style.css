@@ -47,6 +47,7 @@ section {
     align-items: center;
     z-index: 100;
     transition: .5s ease;
+    text-shadow: 2px 2px 10px var(--bg-color);
 }
 
 .header.sticky {
@@ -72,7 +73,6 @@ section {
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
-    text-shadow: 2px 2px 2px black;
 }
 
 .navbar a:hover,
@@ -115,14 +115,14 @@ section {
     font-size: 4rem;
     font-weight: 600;
     line-height: 0.5;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 10px var(--bg-color);
 }
 
 .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.5;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 10px var(--bg-color);
 }
 
 .home-content #typewriter {
@@ -130,13 +130,13 @@ section {
     color: var(--main-color);
     font-size: 2.2rem;
     font-weight: 700;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 10px var(--bg-color);
 }
 
 .home-content p {
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 10px var(--bg-color);
 }
 
 .btn-box {
@@ -145,6 +145,7 @@ section {
     justify-content: space-between;
     width: 34.5rem;
     height: 5rem;
+    text-shadow: 2px 2px 10px var(--bg-color);
 }
 
 .btn-box .btn {
@@ -168,6 +169,7 @@ section {
 
 .btn-box .btn:hover {
     color: var(--bg-color);
+    text-shadow: none;
 }
 
 .btn-box .btn::before {
@@ -190,6 +192,7 @@ section {
     display: flex;
     position: absolute;
     bottom: 4rem;
+    text-shadow: 2px 2px 10px var(--bg-color);
 }
 
 .social a {
@@ -211,6 +214,7 @@ section {
 
 .social a:hover {
     color: var(--bg-color);
+    text-shadow: none;
 }
 
 .social a::before {

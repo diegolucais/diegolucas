@@ -1,4 +1,4 @@
-// toggle icon navbar
+// Toggle icon navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -7,7 +7,7 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active');
 }
 
-// scroll sections
+// Scroll sections
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -19,7 +19,7 @@ window.onscroll = () => {
     let id = sec.getAttribute('id');
 
     if (top >= offset && top < offset + height) {
-      //active navbar links
+      //Active navbar links
       navLinks.forEach(links => {
         links.classList.remove('active');
         document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
@@ -27,12 +27,12 @@ window.onscroll = () => {
     }
   });
 
-// sticky header
+// Sticky navbar
 let header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 150);
 
-// remove toggle icon and navbar when click navbar links (scroll)
+// Remove toggle icon and navbar when click navbar links (scroll)
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
@@ -54,3 +54,14 @@ instance.typeString('Escritor')
   .pauseFor(1000)
   .deleteAll(10)
   .start();
+
+// Form Submit button
+document.addEventListener('DOMContentLoaded', function () {
+  var submit = document.getElementById('submit');
+
+  submit.addEventListener('click', function (event) {
+
+    event.preventDefault(); // Prevent the default anchor behavior
+    document.getElementById('form').submit(); // Submit the form
+  });
+});
