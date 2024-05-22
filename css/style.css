@@ -34,6 +34,16 @@ section {
     padding: 10rem 10% 10rem;
 }
 
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+span {
+    color: var(--main-color);
+}
+
 /* header design */
 .header {
     position: fixed;
@@ -238,6 +248,34 @@ section {
     background-color: var(--second-bg-color);
 }
 
+.books-content {
+    text-align: center;
+}
+
+.book-cover img {
+    max-width: 35%;
+    margin-bottom: 4rem;
+}
+
+hr {
+    border: none;
+    border-top: .5rem dotted var(--main-color);
+    margin: 1rem 35% 2.2rem;
+}
+
+.books-content h3 {
+    font-size: 2.6rem;
+}
+
+.books-content p {
+    font-size: 1.6rem;
+    margin: 2rem 10% 3rem;
+}
+
+.btn-books {
+    margin: auto;
+}
+
 /* about section design */
 .about {
     display: flex;
@@ -247,16 +285,6 @@ section {
     gap: 2rem;
     background-color: var(--bg-color);
     padding-bottom: 6rem;
-}
-
-.heading {
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-span {
-    color: var(--main-color);
 }
 
 .about-img {
@@ -360,10 +388,6 @@ span {
 
 .contact form .textarea-field textarea {
     resize: none;
-}
-
-.contact form .btn-box.btns {
-    cursor: pointer;
 }
 
 /* footer design */
@@ -527,7 +551,9 @@ span {
         font-size: 2rem;
     }
 
-    .home-content p {
+    .home-content p,
+    .about-content p,
+    .book-content p {
         font-size: 1.8rem;
     }
     
@@ -536,12 +562,9 @@ span {
         transform: translateX(-50%);
     }
 
-    .about-content h3 {
+    .about-content h3,
+    .books-content h3 {
         font-size: 2.2rem;
-    }
-
-    .about-content p {
-        font-size: 1.8rem;
     }
 
     .contact form .input-box .input-field {
