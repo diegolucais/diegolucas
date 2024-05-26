@@ -252,24 +252,20 @@ span {
     text-align: center;
 }
 
-.book-cover img {
+.book-cover {
     max-width: 35%;
-    margin-bottom: 4rem;
+    float: left;
+    margin-right: 3rem;
 }
 
-hr {
-    border: none;
-    border-top: .5rem dotted var(--main-color);
-    margin: 1rem 35% 2.2rem;
-}
-
-.books-content h3 {
+.book-details h3 {
     font-size: 2.6rem;
 }
 
-.books-content p {
+.book-details p {
     font-size: 1.6rem;
-    margin: 2rem 10% 3rem;
+    text-align: justify;
+    margin-bottom: 3rem;
 }
 
 .btn-books {
@@ -565,6 +561,11 @@ hr {
     .about-content h3,
     .books-content h3 {
         font-size: 2.2rem;
+    }
+
+    .book-cover {
+        max-width: 50%;
+        float: none;
     }
 
     .contact form .input-box .input-field {
