@@ -54,14 +54,3 @@ instance.typeString('Escritor')
   .pauseFor(1000)
   .deleteAll(10)
   .start();
-
-// Form Submit button
-document.addEventListener('DOMContentLoaded', function () {
-  var submit = document.getElementById('submit');
-
-  submit.addEventListener('click', function (event) {
-
-    event.preventDefault(); // Prevent the default anchor behavior
-    document.getElementById('form').submit(); // Submit the form
-  });
-});
