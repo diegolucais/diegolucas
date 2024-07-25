@@ -14,8 +14,8 @@
 :root {
     --bg-color: #2e160c;
     --second-bg-color: #140c09;
-    --text-color:#FCF8F3;
-    --highlights: #f3d170;
+    --text-color: #FFFFFF;
+    --highlights: #FFCC33;
 }
 
 html {
