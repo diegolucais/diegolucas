@@ -28,14 +28,14 @@ body {
     color: var(--text-color);
 }
 
-/* general styling */
+/* General Styling */
 section {
     min-height: 100vh;
     padding: 10rem 10% 10rem;
 }
 
 .heading {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -44,7 +44,62 @@ span {
     color: var(--highlights);
 }
 
-/* header design */
+/* Buttons */
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+    height: 5rem;
+    text-shadow: 2px 2px 5px var(--bg-color);
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: transparent;
+    border: .2rem solid var(--highlights);
+    border-radius: .8rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--highlights);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn:hover {
+    color: var(--bg-color);
+    text-shadow: none;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--highlights);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+/* NAVBAR */
 .header {
     position: fixed;
     top: 0;
@@ -90,7 +145,7 @@ span {
     color: var(--highlights);
 }
 
-/* home section design */
+/* HOME */
 .home {
     display: flex;
     align-items: center;
@@ -147,55 +202,6 @@ span {
     text-shadow: 2px 2px 5px var(--bg-color);
 }
 
-.btn-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 35rem;
-    height: 5rem;
-    text-shadow: 2px 2px 5px var(--bg-color);
-}
-
-.btn-box .btn {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 100%;
-    background: transparent;
-    border: .2rem solid var(--highlights);
-    border-radius: .8rem;
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    color: var(--highlights);
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.btn-box .btn:hover {
-    color: var(--bg-color);
-    text-shadow: none;
-}
-
-.btn-box .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--highlights);
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box .btn:hover::before {
-    width: 100%;
-}
-
 .social {
     display: flex;
     position: absolute;
@@ -241,6 +247,95 @@ span {
     width: 100%;
 }
 
+/* LIVROS */
+.books {
+    background: var(--bg-color);
+    padding-bottom: 6rem;
+}
+
+.books-img img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+}
+
+.books-content h3 {
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+.books-content p {
+    font-size: 1.6rem;
+    text-align: justify;
+    margin: 2rem 0 3rem;
+}
+
+.books-content .btn-box.btn {
+    
+}
+
+/* SOBRE */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--highlights);
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--highlights);
+    border-right: .2rem solid var(--highlights);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+ 
+/* CONTATO */
+.contact {
+    background: var(--bg-color);
+}
+
+/* FOOTER */
+
+
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
@@ -251,10 +346,6 @@ span {
 @media (max-width: 991px) {
     .header {
         padding: 2rem 4%;
-    }
-
-    section {
-        padding: 10rem 4% 2rem;
     }
 
     .home {

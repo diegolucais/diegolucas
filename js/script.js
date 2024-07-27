@@ -32,7 +32,7 @@ let header = document.querySelector('header');
 
 header.classList.toggle('sticky', window.scrollY > 150);
 
-// Remove toggle icon and navbar when click navbar links (scroll)
+// Remove toggle icon and navbar when clicking navbar links or scrolling
 menuIcon.classList.remove('bx-x');
 navbar.classList.remove('active');
 
@@ -46,11 +46,11 @@ const instance = new Typewriter('#typewriter', {
 
 instance.typeString('Escritor')
   .pauseFor(1000)
-  .deleteAll(10)
-  .typeString('Autor de <em>Os Escaravelhos de Seth</em>')
+  .deleteAll(5)
+  .typeString('Autor de <em>As Aventuras de Alex Canyon</em>')
   .pauseFor(1000)
-  .deleteAll(10)
-  .typeString('<strong>25.10.2024</strong> – Pré-venda em breve!')
+  .deleteAll(5)
+  .typeString('Os Escaravelhos de Seth — 25.10.2024')
   .pauseFor(1000)
-  .deleteAll(10)
+  .deleteAll(5)
   .start();
