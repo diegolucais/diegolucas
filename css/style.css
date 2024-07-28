@@ -36,7 +36,7 @@ section {
 
 .heading {
     font-size: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5%;
     text-align: center;
 }
 
@@ -253,21 +253,22 @@ span {
 }
 
 .books-img img {
-    float: left;
-    width: 35rem;
-    margin: 3rem 5% 3rem 0;
+    float: right;
+    width: 30rem;
+    margin: 3rem 0 3rem 5%;
 }
 
 .books-content h3 {
     text-align: center;
     font-size: 2.6rem;
+    margin-bottom: 2rem;
 }
 
 .books-content p {
     font-size: 1.6rem;
     text-align: justify;
     line-height: 1.8;
-    margin: 2rem 0 3rem;
+    margin-bottom: 2rem;
 }
 
 .btn-box.btnss {
@@ -314,6 +315,13 @@ span {
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--highlights);
     border-right: .2rem solid var(--highlights);
+    animation: aboutSpinner 8s linear infinite;
+}
+
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 .about-content {
@@ -326,15 +334,113 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 15% 3rem;
+    margin: 2rem 0 3rem;
 }
  
 /* CONTATO */
+.contact-content {
+    margin: 2rem 0 3rem;
+}
+
+.contact-content p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--highlights);
+}
+
+.contact form .textarea-field textarea {
+    resize: none;
+}
+
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+    margin-top: 2rem;
+}
 
 /* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4rem 10%;
+    background: var(--second-bg-color);
+}
 
+.copyright p {
+    font-size: 1.6rem;
+}
 
-/* BREAKPOINTS */
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: transparent;
+    border: .2rem solid var(--highlights);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--highlights);
+    z-index: -1;
+    transition: .5s;
+}
+
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--highlights);
+    transition: .5s;
+}
+
+.footer-iconTop a:hover i {
+    color: var(--bg-color);
+}
+
+/********** BREAKPOINTS **********/
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -408,6 +514,28 @@ span {
         transform: translateX(0);
         transition-delay: .25s;
     }
+
+    .books-img {
+        text-align: center;
+    }
+
+    .books-img img {
+        float: none;
+        width: 25rem;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 520px) {
@@ -441,5 +569,11 @@ span {
     .social {
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 462px) {
+    .home-content h1 {
+        font-size: 5.2rem;
     }
 }
