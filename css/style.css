@@ -64,7 +64,7 @@ span {
     background: transparent;
     border: .2rem solid var(--highlights);
     border-radius: .8rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: .1rem;
     color: var(--highlights);
@@ -248,10 +248,6 @@ span {
 }
 
 /* LIVROS */
-.books {
-    padding-bottom: 6rem;
-}
-
 .books-img img {
     float: right;
     width: 30rem;
@@ -273,7 +269,7 @@ span {
 
 .btn-box.btnss {
     margin: 0 auto 0;
-    width: 15rem;
+    width: 35rem;
 }
 
 /* SOBRE */
@@ -282,9 +278,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
     background: var(--second-bg-color);
-    padding-bottom: 6rem;
 }
 
 .about-img {
@@ -330,6 +324,7 @@ span {
 
 .about-content h3 {
     font-size: 2.6rem;
+    margin-top: 2rem;
 }
 
 .about-content p {
@@ -338,7 +333,7 @@ span {
 }
  
 /* CONTATO */
-.contact-content {
+/* .contact-content {
     margin: 2rem 0 3rem;
 }
 
@@ -385,7 +380,7 @@ span {
 .contact form .btn-box.btns .btn {
     cursor: pointer;
     margin-top: 2rem;
-}
+} */
 
 /* FOOTER */
 .footer {
@@ -394,7 +389,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 4rem 10%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .copyright p {
@@ -431,7 +426,7 @@ span {
 }
 
 .footer-iconTop a i {
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: var(--highlights);
     transition: .5s;
 }
@@ -521,12 +516,12 @@ span {
 
     .books-img img {
         float: none;
-        width: 25rem;
+        width: 30rem;
     }
 
-    .contact form .input-box .input-field {
+    /* .contact form .input-box .input-field {
         width: 100%;
-    }
+    } */
 
     .footer {
         flex-direction: column-reverse;
