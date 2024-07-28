@@ -64,7 +64,7 @@ span {
     background: transparent;
     border: .2rem solid var(--highlights);
     border-radius: .8rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
     color: var(--highlights);
