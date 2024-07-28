@@ -249,14 +249,13 @@ span {
 
 /* LIVROS */
 .books {
-    background: var(--bg-color);
     padding-bottom: 6rem;
 }
 
 .books-img img {
     float: left;
-    width: 30%;
-    margin-right: 5%;
+    width: 35rem;
+    margin: 3rem 5% 3rem 0;
 }
 
 .books-content h3 {
@@ -267,7 +266,13 @@ span {
 .books-content p {
     font-size: 1.6rem;
     text-align: justify;
+    line-height: 1.8;
     margin: 2rem 0 3rem;
+}
+
+.btn-box.btnss {
+    margin: 0 auto 0;
+    width: 15rem;
 }
 
 /* SOBRE */
@@ -321,13 +326,10 @@ span {
 
 .about-content p {
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem 15% 3rem;
 }
  
 /* CONTATO */
-.contact {
-    background: var(--bg-color);
-}
 
 /* FOOTER */
 

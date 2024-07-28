@@ -47,7 +47,7 @@ const instance = new Typewriter('#typewriter', {
 instance.typeString('Escritor')
   .pauseFor(1000)
   .deleteAll(5)
-  .typeString('Autor de <em>As Aventuras de Alex Canyon</em>')
+  .typeString('Autor de As Aventuras de Alex Canyon')
   .pauseFor(1000)
   .deleteAll(5)
   .typeString('Os Escaravelhos de Seth — 25.10.2024')
