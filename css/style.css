@@ -30,7 +30,6 @@ body {
 
 /* General Styling */
 section {
-    min-height: 100vh;
     padding: 10rem 10% 10rem;
 }
 
@@ -147,6 +146,7 @@ span {
 
 /* HOME */
 .home {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -268,8 +268,8 @@ span {
 }
 
 .btn-box.btnss {
-    margin: 0 auto 0;
-    width: 35rem;
+    margin: auto;
+    width: 15rem;
 }
 
 /* SOBRE */
@@ -333,7 +333,7 @@ span {
 }
  
 /* CONTATO */
-/* .contact-content {
+.contact-content {
     margin: 2rem 0 3rem;
 }
 
@@ -368,7 +368,7 @@ span {
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: transparent;
+    background: var(--second-bg-color);
     border-radius: .6rem;
     border: .2rem solid var(--highlights);
 }
@@ -380,7 +380,7 @@ span {
 .contact form .btn-box.btns .btn {
     cursor: pointer;
     margin-top: 2rem;
-} */
+}
 
 /* FOOTER */
 .footer {
@@ -389,7 +389,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 4rem 10%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 
 .copyright p {
@@ -519,9 +519,9 @@ span {
         width: 30rem;
     }
 
-    /* .contact form .input-box .input-field {
+    .contact form .input-box .input-field {
         width: 100%;
-    } */
+    }
 
     .footer {
         flex-direction: column-reverse;
