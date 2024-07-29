@@ -38,7 +38,7 @@ navbar.classList.remove('active');
 
 }
 
-// typewriter
+// Typewriter
 const instance = new Typewriter('#typewriter', {
   loop: true,
   delay: 60,
