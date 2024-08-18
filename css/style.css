@@ -150,7 +150,7 @@ span {
     display: flex;
     align-items: center;
     padding: 0 10%;
-    background: url(../images/home.tif) bottom no-repeat;
+    background: url(../images/home.jpg) bottom no-repeat;
     background-size: cover;
     position: relative;
 }
