@@ -65,7 +65,6 @@ span {
     border-radius: .8rem;
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: .1rem;
     color: var(--highlights);
     z-index: 1;
     overflow: hidden;
@@ -142,6 +141,10 @@ span {
 .navbar a:hover,
 .navbar a.active {
     color: var(--highlights);
+}
+
+.language {
+    width: 3rem;
 }
 
 /* HOME */
