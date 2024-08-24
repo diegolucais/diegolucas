@@ -144,6 +144,7 @@ span {
 }
 
 .language {
+    height: auto;
     width: 3rem;
 }
 
