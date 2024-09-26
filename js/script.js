@@ -53,4 +53,7 @@ instance.typeString('Escritor')
   .typeString('Os Escaravelhos de Seth — 25.10.2024')
   .pauseFor(1000)
   .deleteAll(5)
+  .typeString('Pré-venda já disponível')
+  .pauseFor(1000)
+  .deleteAll(5)
   .start();
