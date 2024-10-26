@@ -50,7 +50,7 @@ instance.typeString('Escritor')
   .typeString('Autor de As Aventuras de Alex Canyon')
   .pauseFor(1000)
   .deleteAll(5)
-  .typeString('Os Escaravelhos de Seth — 25.10.2024')
+  .typeString('Os Escaravelhos de Seth — já disponível')
   .pauseFor(1000)
   .deleteAll(5)
   .start();
