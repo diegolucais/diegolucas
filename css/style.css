@@ -30,7 +30,7 @@ body {
 
 /* General Styling */
 section {
-    padding: 10rem 10% 10rem;
+    padding: 10rem 15% 10rem;
 }
 
 .heading {
@@ -58,13 +58,13 @@ span {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 15rem;
+    width: 16rem;
     height: 100%;
     background: transparent;
     border: .2rem solid var(--highlights);
     border-radius: .8rem;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--highlights);
     z-index: 1;
     overflow: hidden;
@@ -143,18 +143,6 @@ span {
     color: var(--highlights);
 }
 
-.language {
-    width: 2.2rem;
-    height: auto;
-    box-shadow: #140c09;
-}
-
-a:hover .language {
-    transform: scale(1.2);
-    transition: transform 0.5s ease;
-    box-shadow: 0 0 15px var(--highlights);
-}
-
 /* HOME */
 .home {
     min-height: 100vh;
@@ -208,8 +196,8 @@ a:hover .language {
 }
 
 .home-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 4rem;
+    font-size: 1.8rem;
+    margin: 4rem 0 4rem;
     text-shadow: 2px 2px 5px var(--bg-color);
 }
 
@@ -237,6 +225,10 @@ a:hover .language {
     transition: .5s;
 }
 
+.social .amazon {
+    margin-left: .4em;
+}
+
 .social a:hover {
     color: var(--bg-color);
     text-shadow: none;
@@ -262,7 +254,7 @@ a:hover .language {
 .books-img img {
     float: right;
     width: 25rem;
-    margin: 3rem 0 3rem 5%;
+    margin: 5rem 0 3rem 8%;
 }
 
 .books-content h3 {
