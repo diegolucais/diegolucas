@@ -118,9 +118,7 @@ span {
 }
 
 .logo {
-    font-size: 3.5rem;
-    color: var(--text-color);
-    font-weight: 600;
+    width: 30rem;
 }
 
 #menu-icon {
