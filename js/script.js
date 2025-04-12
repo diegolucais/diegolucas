@@ -44,13 +44,13 @@ const instance = new Typewriter('#typewriter', {
   delay: 60,
 });
 
-instance.typeString('Escritor')
+instance.typeString('Writer')
   .pauseFor(1000)
   .deleteAll(5)
-  .typeString('Autor de As Aventuras de Alex Canyon')
+  .typeString('Author of <em>The Adventures of Alex Canyon</em>')
   .pauseFor(1000)
   .deleteAll(5)
-  .typeString('Os Escaravelhos de Seth — já disponível')
+  .typeString('The Scarabs of Seth — available now!')
   .pauseFor(1000)
   .deleteAll(5)
   .start();
