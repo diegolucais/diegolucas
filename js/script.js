@@ -47,10 +47,7 @@ const instance = new Typewriter('#typewriter', {
 instance.typeString('Writer')
   .pauseFor(1000)
   .deleteAll(5)
-  .typeString('Author of <em>The Adventures of Alex Canyon</em>')
-  .pauseFor(1000)
-  .deleteAll(5)
-  .typeString('The Scarabs of Seth — available now!')
+  .typeString('Author of <em>The Scarabs of Seth</em>')
   .pauseFor(1000)
   .deleteAll(5)
   .start();
