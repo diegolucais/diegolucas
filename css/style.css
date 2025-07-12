@@ -110,6 +110,18 @@ nav.scrolled {
       transition: transform 0.3s, opacity 0.3s;
 }
 
+.hamburger.open span:nth-child(1) {
+      transform: translateY(0.7rem) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+      opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+      transform: translateY(-0.7rem) rotate(-45deg);
+}
+
 /* Hero */
 .hero {
       height: 100vh;
@@ -177,7 +189,7 @@ section {
 
 .about-image {
       filter: grayscale(100);
-      width: 30%;
+      width: 40%;
       margin: 0 auto 1.5rem auto;
       padding: 0.5rem;
       border-radius: 0.5rem;
@@ -207,7 +219,6 @@ section {
 
 .book-card:hover {
       box-shadow: 0 10px 30px grey;
-      /* a bit more shadow depth */
 }
 
 .book-card.visible {
@@ -371,7 +382,22 @@ footer,
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile nav below 768px */
+/* === Media Query === */
+@media (max-width: 1342px) {
+      .book-grid {
+            grid-template-columns: repeat(2, 1fr);
+      }
+
+      .side-book.prev:hover {
+            left: 5%;
+      }
+
+      .side-book.next:hover {
+            right: 5%;
+      }
+
+}
+
 @media (max-width: 768px) {
       .hamburger {
             display: flex;
@@ -415,7 +441,11 @@ footer,
       }
 
       .about-image {
-            width: 50%;
+            width: 50vw;
+      }
+
+      .book-grid {
+            grid-template-columns: 1fr;
       }
 
       .carousel-nav {
@@ -423,14 +453,90 @@ footer,
       }
 }
 
-.hamburger.open span:nth-child(1) {
-      transform: translateY(0.7rem) rotate(45deg);
-}
+@media (max-width: 480px) {
+      nav {
+            padding: 0.5rem 1rem;
+      }
 
-.hamburger.open span:nth-child(2) {
-      opacity: 0;
-}
+      .logo {
+            font-size: 1.4rem;
+      }
 
-.hamburger.open span:nth-child(3) {
-      transform: translateY(-0.7rem) rotate(-45deg);
+      .menu {
+            font-size: 1rem;
+      }
+
+      .hero {
+            min-height: 60vh;
+            padding: 5rem 1rem;
+            background-position: centre bottom;
+      }
+
+      .hero h1 {
+            font-size: 2rem;
+      }
+
+      .hero #typewriter {
+            font-size: 1rem;
+      }
+
+      section {
+            padding: 3rem 5%;
+      }
+
+      h2 {
+            font-size: 1.4rem;
+      }
+
+      p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+      }
+
+      #about {
+            flex-direction: column;
+            text-align: center;
+      }
+
+      .about-image {
+            width: 65vw;
+            margin-bottom: 1rem;
+      }
+
+      .about-text {
+            font-size: 0.9rem;
+      }
+
+      .book-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+      }
+
+      .book-card {
+            padding: 0.75rem;
+      }
+
+      #contact form {
+            max-width: 90vw;
+            margin: 0 auto;
+      }
+
+      #contact input,
+      #contact textarea {
+            font-size: 0.9rem;
+            padding: 0.75rem;
+      }
+
+      .footer-button {
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+      }
+
+      .book-page .book-cover {
+            width: 90vw;
+            max-width: 280px;
+      }
 }
