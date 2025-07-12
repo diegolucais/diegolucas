@@ -1,53 +1,53 @@
-// Toggle icon navbar
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
+// Common JS for all pages
+document.addEventListener('DOMContentLoaded', () => {
+  // Reveal book cards on scroll
+  const cards = document.querySelectorAll('.book-card');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  cards.forEach(card => observer.observe(card));
 
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
-}
+  // Mobile nav toggle
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      menu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+    });
+  }
 
-// Scroll sections
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
+  // Navbar background on scroll (Home page only)
+  const nav = document.querySelector('nav');
+  if (nav && !document.body.classList.contains('book-page')) {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 0) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+  }
 
-window.onscroll = () => {
-  sections.forEach(sec => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 100;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
+  // Typewriter on Home page
+  if (document.querySelector('#typewriter')) {
+    const instance = new Typewriter('#typewriter', {
+      loop: true,
+      delay: 60,
+    });
 
-    if (top >= offset && top < offset + height) {
-      //Active navbar links
-      navLinks.forEach(links => {
-        links.classList.remove('active');
-        document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
-      });
-    }
-  });
-
-// Sticky navbar
-let header = document.querySelector('header');
-
-header.classList.toggle('sticky', window.scrollY > 150);
-
-// Remove toggle icon and navbar when clicking navbar links or scrolling
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active');
-
-}
-
-// Typewriter
-const instance = new Typewriter('#typewriter', {
-  loop: true,
-  delay: 60,
+    instance.typeString('Author of dark fantasy & mystical adventures.')
+      .pauseFor(2000)
+      .deleteAll(5)
+      .typeString('Explore worlds of ancient artefacts and epic battles.')
+      .pauseFor(2000)
+      .deleteAll(5)
+      .start();
+  }
 });
-
-instance.typeString('Writer')
-  .pauseFor(1000)
-  .deleteAll(5)
-  .typeString('Author of <em>The Scarabs of Seth</em>')
-  .pauseFor(1000)
-  .deleteAll(5)
-  .start();

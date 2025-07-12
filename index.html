@@ -1,139 +1,114 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official site of Diego Lucas, author of The Scarabs of Seth.">
-    <meta name="author" content="Diego Lucas">
-    <title>Diego Lucas</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Typewriter -->
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fantasy author Diego Lucas – discover his books and mystical adventures.">
+  <title>Diego Lucas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 
 <body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo"><a href="index.html#home">DIEGO LUCAS</a></div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="menu">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#books">Books</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Navbar -->
-    <header class="header">
-        <a href="#home" class="logo">Diego.</a>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I’m Diego.</h1>
+      <div id="typewriter"></div>
+    </div>
+  </section>
 
-        <div id="menu-icon" class="bx bx-menu"></div>
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <img class="about-image" src="images/diegolucas.jpeg" alt="Diego Lucas">
+        <p>Born on 28 February 1994 in Taubaté, São Paulo, Brazil, Diego Lucas has always felt a deep connection to the
+          ancient world, with a particular fascination for Egypt. Inspired by <em>Tomb Raider</em> and <em>The
+            Mummy</em> (1999), he once dreamt of becoming an archaeologist. However, upon realising that books allowed
+          him to create his own expeditions, he chose the path of writing instead.<br><br>
+          From an early age, Diego nurtured a passion for reading, which soon evolved into a desire to tell his own
+          stories. At the age of 12, he created his first character, <em>Alex Canyon</em>, giving life to <em>The
+            Scarabs of Seth</em> – the novel that marked the beginning of his journey as a writer.</p>
+      </div>
+    </div>
+  </section>
 
-        <nav class="navbar">
-            <a href="#home" class="active">HOME</a>
-            <a href="#books">BOOK</a>
-            <a href="#about">ABOUT</a>
-            <!-- <a href="#contact">CONTACT</a> -->
+  <!-- Books -->
+  <section id="books">
+    <div class="container">
+      <h2>My Books</h2>
+      <div class="book-grid">
+        <a href="the-scarabs-of-seth.html" class="book-card">
+          <img src="images/The Scarabs of Seth.jpg" alt="The Scarabs of Seth">
+          <h3>The Scarabs of Seth</h3>
+          <p>My debut novel. An archaeological adventure where each discovery triggers greater dangers and deeper
+            mysteries.</p>
+        </a>
+        <a href="the-wound-shattering.html" class="book-card">
+          <img src="images/The Wound Shattering.jpeg" alt="The Wound Shattering">
+          <h3>The Wound Shattering</h3>
+          <p>Upcoming. The world is shattered, and beneath the stone, something still pulses with forgotten power.
+          </p>
+        </a>
+        <a href="the-mystic-staff-of-ra.html" class="book-card">
+          <img src="images/The Mystic Staff of Ra.jpeg" alt="The Mystic Staff of Ra">
+          <h3>The Mystic Staff of Ra</h3>
+          <p>Upcoming. Prepare for an epic adventure where the past and present intertwine in a deadly game of power and
+            survival. (COVER NOT FINAL)</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-            <span class="active-nav"></span>
-        </nav>
-    </header>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form action="mailto:diego@diegolucas.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button class="footer-button" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Home -->
-    <section id="home" class="home">
-        <div class="home-content">
-            <h2>Hello, I am</h2>
-            <h1>Diego Lucas</h1>
+  <!-- Footer -->
+  <footer>
+    <div class="social-buttons">
+      <a href="https://www.instagram.com/diegolucais" target="_blank" class="footer-button">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://amazon.com/author/diegolucas" target="_blank" class="footer-button">
+        <i class="fab fa-amazon"></i>
+      </a>
+      <a href="https://www.goodreads.com/diegolucas" target="_blank" class="footer-button">
+        <i class="fab fa-goodreads"></i>
+      </a>
+    </div>
+    <p>Copyright &copy; 2024-2025 by Diego Lucas. All rights reserved.</p>
+  </footer>
 
-            <div id="typewriter"></div>
-
-            <p>Welcome! I’m Diego Lucas, a writer devoted to exploring the power of stories. Dive into my collections and discover where words can take us. Happy reading!</p>
-
-        </div>
-
-        <div class="social">
-            <a href="https://www.instagram.com/diegolucais/" target="_blank"><i class="bx bxl-instagram"></i></a>
-            <a class="amazon" href="https://www.amazon.com/author/diegolucas" target="_blank"><i class='bx bxl-amazon'></i></a>
-        </div>
-    </section>
-
-    <!-- Livros -->
-     <section id="books" class="books">
-        <h2 class="heading">My <span>Book</span></h2>
-
-        <div class="books-img">
-            <img src="images/scarabs.png" alt="book-cover">
-        </div>
-
-        <div class="books-content">
-            <h3><span>The Scarabs of Seth</span></h3>
-            <p>On Bolivia's treacherous Death Road, archaeologist Alex Canyon finds himself searching for a missing friend. During his mission, he uncovers a hidden temple in the mountains, brimming with secrets that surpass modern understanding. Among unexpected Egyptian hieroglyphs and an enigmatic artefact, Alex is confronted with an unimaginable revelation: the key to a forgotten tomb in Egypt.</p>
-            <p>Driven by an insatiable thirst for the unknown, Alex unravels an ancient scroll that speaks of three legendary scarabs, capable of bestowing devastating powers upon their holder. However, his journey quickly escalates into a contest for the artefacts against Johnny West, a ruthless businessman, and William Wright, the charismatic leader of the mysterious Order of Seth – two rivals prepared to do whatever it takes to achieve their goals.</p>
-            <p>Embark on this thrilling adventure, where each discovery triggers greater dangers and deeper mysteries. In a plot of intense rivalries and unexpected alliances, Alex faces a world where history and mythology intertwine, challenging the limits of his courage and survival instincts.</p>
-        </div>
-
-        <div class="btn-box btnss">
-            <a href="https://amzn.eu/d/2hKpQCQ" target="_blank" class="btn">Amazon</a>
-        </div>
-     </section>
-
-    <!-- Sobre -->
-     <section id="about" class="about">
-        <h2 class="heading">About <span>Me</span></h2>
-
-        <div class="about-img">
-            <img src="images/about.jpg" alt="diego-lucas">
-            <span class="circle-spin"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Author of <span>The Adventures of Alex Canyon</span></h3>
-            <p>Born on 28 February 1994 in Taubaté, São Paulo, Brazil, Diego Lucas has always felt a deep connection to the ancient world, with a particular fascination for Egypt. Inspired by Tomb Raider and The Mummy (1999), he once dreamt of becoming an archaeologist. However, upon realising that books allowed him to create his own expeditions, he chose the path of writing instead.</p>
-            
-            <div class="btn-box btns">
-                <a href="https://www.amazon.com/author/diegolucas" target="_blank" class="btn">Read More</a>
-            </div>
-        </div>
-     </section>
-
-    <!-- Contato -->
-    <!-- <section id="contact" class="contact">
-        <h2 class="heading">Let's <span>Chat</span></h2>
-    
-        <div class="contact-content">
-            <p>Would you like to get in touch with me?</p>  
-            <p>Please fill out the form below. I'm looking forward to hearing from you!</p>
-        </div>
-    
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input id="name" type="text" placeholder="Name" required>
-                </div>
-                <div class="input-field">
-                    <input id="email" type="email" placeholder="Email" required>
-                </div>
-            </div>
-    
-            <div class="textarea-field">
-                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            </div>
-    
-            <div class="btn-box btns">
-                <button class="btn" type="submit">Send</button>
-            </div>
-        </form>
-    </section> -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="copyright">
-            <p>Copyright &copy; 2024-2025 by <span>Diego Lucas</span> | All rights reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-chevrons-up'></i></a>
-        </div>
-    </footer>
-
-    <!-- Javascript -->
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
