@@ -113,7 +113,7 @@ nav.scrolled {
 /* Hero */
 .hero {
       height: 100vh;
-      background: url('../images/AAdAC-OEdS Full Artwork.jpg') no-repeat;
+      background: url('../images/AAdAC-OEdS Full Artwork.jpg') bottom no-repeat;
       background-size: cover;
       display: flex;
       align-items: center;
