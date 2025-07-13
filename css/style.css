@@ -12,6 +12,7 @@
 body {
       line-height: 1.6;
       color: #333;
+      overflow-x: hidden;
 }
 
 h1,
@@ -173,10 +174,6 @@ nav.scrolled {
 /* Sections */
 section {
       padding: 4rem 15%;
-}
-
-.container {
-      margin: auto;
 }
 
 /* About */
@@ -358,11 +355,11 @@ footer,
 
 /* Off-canvas positions */
 .side-book.prev {
-      left: -130px;
+      left: -80px;
 }
 
 .side-book.next {
-      right: -130px;
+      right: -80px;
 }
 
 /* Slide in on hover */
@@ -392,19 +389,11 @@ footer,
       }
 
       .side-book.prev {
-            left: -100px;
+            left: -90px;
       }
 
       .side-book.next {
-            right: -100px;
-      }
-
-      .side-book.prev:hover {
-            left: 5%;
-      }
-
-      .side-book.next:hover {
-            right: 5%;
+            right: -90px;
       }
 
 }
