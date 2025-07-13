@@ -211,7 +211,7 @@ section {
       border-radius: 0.5rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
       transform: scale(0.95);
-      transition: box-shadow 1s ease;
+      transition: box-shadow .5s ease;
 }
 
 .book-card:hover {

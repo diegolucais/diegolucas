@@ -42,7 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 60,
     });
 
-    instance.typeString('Author of dark fantasy & mystical adventures.')
+    instance.typeString('Author. Overthinker. Coffee-fuelled storyteller.')
+      .pauseFor(2000)
+      .deleteAll(5)
+      .typeString('Writer of dark fantasy & mystical adventures.')
       .pauseFor(2000)
       .deleteAll(5)
       .typeString('Explore worlds of ancient artefacts and epic battles.')
