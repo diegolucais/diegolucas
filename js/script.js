@@ -42,13 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 60,
     });
 
-    instance.typeString('Author. Overthinker. Coffee-fuelled storyteller.')
+   instance.typeString('Writer of dark fantasy & mythic adventures.')
       .pauseFor(2000)
       .deleteAll(5)
-      .typeString('Writer of dark fantasy & mystical adventures.')
+      .typeString('Coffee-fuelled over-thinker.')
       .pauseFor(2000)
       .deleteAll(5)
-      .typeString('Explore worlds of ancient artefacts and epic battles.')
+      .typeString('Author of <em>The Scarabs of Seth</em>.')
       .pauseFor(2000)
       .deleteAll(5)
       .start();
