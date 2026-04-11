@@ -1,104 +1,201 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en-GB">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fantasy author Diego Lucas – discover his books and mystical adventures.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Welcome to the online world of Diego Lucas — author of The Scarabs of Seth.">
   <title>Diego Lucas</title>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js" defer></script>
 </head>
 
-<body class="animate__animated animate__fadeIn">
-  <!-- Navbar -->
-  <nav aria-label="Main navigation">
-    <div class="logo"><a href="index.html#home">DIEGO LUCAS</a></div>
-    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="menu">
-      <li><a href="index.html#home">HOME</a></li>
-      <li><a href="index.html#about">ABOUT</a></li>
-      <li><a href="index.html#books">BOOKS</a></li>
-    </ul>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="nav-bar" id="mainNav">
+    <div class="nav-container">
+      <a href="#" class="logo">DIEGO LUCAS</a>
+      <div class="nav-links">
+        <a href="#books">Books</a>
+        <a href="#author">Author</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <h1>Hello, I’m Diego.</h1>
-      <div id="typewriter"></div>
-    </div>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="book-cover-wrapper animate-on-scroll">
+          <img id="heroCoverImg" class="hero-cover-img" src="assets/images/The%20Scarabs%20of%20Seth.jpg"
+            alt="The Scarabs of Seth">
+        </div>
+        <div class="hero-content animate-on-scroll">
+          <h1>An adventure carved in stone.</h1>
+          <div class="hero-subhead">Unearth the mystery. Available now in Portuguese & English.</div>
+          <p class="hero-description">After discovering a hidden temple and three mythic scarabs of unimaginable power,
+            Alex Canyon becomes the target of ruthless rivals, and must race across the globe before the legend awakens…
+            and his time runs out.</p>
+          <div class="meta-info">
+            <span><i class="fa fa-calendar-alt sky-accent"></i> First published 2024</span>
+            <span><i class="fa fa-file-alt sky-accent"></i> 482 pages</span>
+          </div>
+          <div class="hero-cta">
+            <a href="#books" class="btn btn-sky"><i class="fas fa-book-open" style="margin-right: 8px;"></i>Explore the
+              Books</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- About -->
-  <section id="about">
-    <div class="container">
-      <div class="about-text">
-        <h2>About Me</h2>
-        <img class="about-image" src="images/diegolucas.jpeg" alt="Diego Lucas">
-        <p>Diego Lucas has always felt a deep connection to the ancient world, with a particular fascination for Egypt.
-          Inspired by <em>Tomb Raider</em> and <em>The
-            Mummy</em> (1999), he once dreamt of becoming an archaeologist. However, upon realising that books allowed
-          him to create his own expeditions, he chose the path of writing instead.<br><br>
-          From an early age, Diego nurtured a passion for reading, which soon evolved into a desire to tell his own
-          stories. At the age of 12, he created his first character, <em>Alex Canyon</em>, giving life to <em>The
-            Scarabs of Seth</em> – the novel that marked the beginning of his journey as a writer.</p>
+    <!-- Books Section -->
+    <section id="books" class="section section-light">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Books</h2>
+        <div class="books-grid">
+
+          <!-- Card 1: Os Escaravelhos de Seth -->
+          <div class="book-card animate-on-scroll">
+            <img class="card-cover-img" src="assets/images/Os%20Escaravelhos%20de%20Seth.jpg"
+              alt="Os Escaravelhos de Seth">
+            <h3 class="card-title" title="Os Escaravelhos de Seth">Os Escaravelhos de Seth</h3>
+            <div class="card-year">2024</div>
+            <div class="card-teaser">
+              Ao descobrir um templo oculto e três escaravelhos míticos de poder inimaginável, Alex Canyon se torna
+              alvo de rivais implacáveis, e precisa correr ao redor do mundo antes que a lenda desperte… e
+              seu tempo se esgote.
+            </div>
+            <div class="card-actions">
+              <a href="https://amzn.eu/d/05FFS317" target="_blank" class="btn btn-sky"><i class="fab fa-amazon"></i>
+                Comprar na Amazon</a>
+            </div>
+          </div>
+
+          <!-- Card 2: The Scarabs of Seth -->
+          <div class="book-card animate-on-scroll">
+            <img class="card-cover-img" src="assets/images/The%20Scarabs%20of%20Seth.jpg" alt="The Scarabs of Seth">
+            <h3 class="card-title" title="The Scarabs of Seth">The Scarabs of Seth</h3>
+            <div class="card-year">2025</div>
+            <div class="card-teaser">
+              After discovering a hidden temple and three mythic scarabs of unimaginable power, Alex Canyon becomes the
+              target of ruthless rivals, and must race across the globe before the legend awakens… and his time
+              runs out.
+            </div>
+            <div class="card-actions">
+              <a href="https://amzn.eu/d/004PwEMC" target="_blank" class="btn btn-sky"><i class="fab fa-amazon"></i> Buy
+                on Amazon</a>
+            </div>
+          </div>
+
+          <!-- Card 3: The Wound Shattering -->
+          <div class="book-card animate-on-scroll">
+            <img class="card-cover-img" src="assets/images/The%20Wound%20Shattering.tiff" alt="The Wound Shattering">
+            <h3 class="card-title" title="The Wound Shattering">The Wound Shattering</h3>
+            <div class="card-year">Coming Soon</div>
+            <div class="card-teaser">
+              Khyan Darkwinter wakes on the petrified shore of a world abandoned by its gods. Hunted by a monstrous
+              beast, he must survive long enough to uncover who he is and why he was brought here.
+            </div>
+            <div class="card-actions">
+              <span class="coming-soon-badge"><i class="far fa-clock"></i> Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Author Section -->
+    <section id="author" class="section">
+      <div class="container author-flex">
+        <div class="author-photo animate-on-scroll">
+          <img src="assets/images/Diego%20Lucas.jpeg" alt="Diego Lucas">
+        </div>
+        <div class="author-bio animate-on-scroll">
+          <h3>About the Author</h3>
+          <p>Diego Lucas has always felt a deep connection to the ancient world, with a particular fascination for
+            Egypt. Inspired by <em>Tomb Raider</em> and <em>The Mummy</em> (1999), he once dreamt of becoming an
+            archaeologist. However, upon realising that books allowed him to create his own expeditions, he chose the
+            path of writing instead.</p>
+          <p>From an early age, Diego nurtured a passion for reading, which soon evolved into a desire to tell his own
+            stories. At the age of 12, he created his first character, Alex Canyon, giving life to <em>The Scarabs of
+              Seth</em> – the novel that marked the beginning of his journey as a writer.</p>
+          <div class="social-links">
+            <a href="https://instagram.com/diegotheauthor" aria-label="Instagram" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.goodreads.com/diegolucas" aria-label="Goodreads" target="_blank"><i
+                class="fab fa-goodreads-g"></i></a>
+            <a href="https://www.amazon.com/author/diegolucas" aria-label="Amazon Author Page" target="_blank"><i
+                class="fab fa-amazon"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter / Contact -->
+    <section id="contact" class="section section-light">
+      <div class="container" style="text-align: center;">
+        <h2 class="section-title animate-on-scroll">Stay in the loop</h2>
+        <p class="animate-on-scroll contact-subtext">Sign up for updates on new releases, events, and exclusive content.
+        </p>
+        <div class="animate-on-scroll newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input">
+          <button class="btn btn-sky newsletter-btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>© 2024–2026 by Diego Lucas. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#" id="privacyLink">Privacy</a>
+        <a href="#" id="termsLink">Terms</a>
+        <a href="#"><i class="fas fa-arrow-up"></i> Back to top</a>
       </div>
     </div>
-  </section>
-
-  <!-- Books -->
-  <section id="books">
-    <div class="container">
-      <h2>My Books</h2>
-      <div class="book-grid">
-        <a href="the-scarabs-of-seth.html" class="book-card">
-          <img src="images/The Scarabs of Seth.jpg" alt="The Scarabs of Seth">
-          <h3>The Scarabs of Seth</h3>
-          <p><strong>My debut novel.</strong>
-            Alex Canyon discovers a hidden temple and a deadly secret: three ancient scarabs of unimaginable power. As
-            rivals close in, he’s swept into a global race against time and myth.</p>
-        </a>
-        <a href="the-wound-shattering.html" class="book-card">
-          <img src="images/The Wound Shattering.jpeg" alt="The Wound Shattering">
-          <h3>The Wound Shattering</h3>
-          <p><strong>Upcoming.</strong>
-            Khyan Darkwinter wakes on the petrified shore of a world abandoned by its gods. Hunted by a monstrous beast,
-            he must survive long enough to uncover who he is – and why he was brought here.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-  <hr>
-
-  <!-- Footer -->
-  <footer role="contentinfo">
-    <div class="social-buttons">
-      <a href="https://www.instagram.com/diegotheauthor" class="footer-button" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://amazon.com/author/diegolucas" class="footer-button" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-amazon"></i>
-      </a>
-      <a href="https://www.goodreads.com/diegolucas" class="footer-button" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-goodreads"></i>
-      </a>
-    </div>
-    <p>Copyright &copy; 2024-2026 by Diego Lucas. All rights reserved.</p>
   </footer>
 
-  <!-- Javascript -->
-  <script src="js/script.js" defer></script>
+  <!-- Modals -->
+  <div class="modal" id="privacyModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
+      <h2>Privacy Policy</h2>
+      <p style="margin-bottom: 1.2rem;">Last updated: 2026</p>
+      <p style="margin-bottom: 1.2rem;">Diego Lucas ("we", "us", or "our") operates the diegolucas.com website. This
+        page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our
+        site.</p>
+      <p style="margin-bottom: 1.2rem;">We collect email addresses only when voluntarily provided (e.g., newsletter
+        signup). We do not share your information with third parties.</p>
+      <p>This site uses local storage and cookies only for essential functionality. No tracking or advertising cookies
+        are used. For any questions, please contact us via the social channels provided.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="termsModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
+      <h2>Terms of Use</h2>
+      <p style="margin-bottom: 1.2rem;">By accessing this website, you agree to be bound by these terms. All content © by
+        Diego Lucas. You may not reproduce, distribute, or transmit any material without prior written permission.</p>
+      <p style="margin-bottom: 1.2rem;">The information provided on this site is for general informational purposes
+        only. We reserve the right to modify these terms at any time.</p>
+      <p>Links to external sites (e.g., Amazon) are provided for convenience; we are not responsible for their content
+        or practices.</p>
+    </div>
+  </div>
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
