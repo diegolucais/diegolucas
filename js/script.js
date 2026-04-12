@@ -17,31 +17,54 @@
     let isEnglishCover = true;
 
     function rotateCover() {
-        // Fade out and slightly scale down
         heroImg.classList.add('fade-out');
-
         setTimeout(() => {
-            // Swap image
             heroImg.src = isEnglishCover ? ptCover : enCover;
             heroImg.alt = isEnglishCover ? 'Os Escaravelhos de Seth' : 'The Scarabs of Seth';
             isEnglishCover = !isEnglishCover;
-
-            // Remove the class to fade back in
             heroImg.classList.remove('fade-out');
-        }, 400); // matches the CSS transition duration
+        }, 400);
     }
 
-    setInterval(rotateCover, 4500); // a bit longer to appreciate the animation
+    setInterval(rotateCover, 4500);
 
     // Smooth scroll
     document.querySelectorAll('.nav-links a, .footer-links a[href="#"]').forEach(a => {
         a.addEventListener('click', e => {
             const href = a.getAttribute('href');
-            if (href === "#") { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
-            else if (href.startsWith('#')) {
+            if (href === "#") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (href.startsWith('#')) {
                 e.preventDefault();
                 document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' });
             }
+        });
+    });
+
+    // Mobile navigation toggle (hamburger)
+    const navContainer = document.querySelector('.nav-container');
+    const navToggle = document.createElement('button');
+    navToggle.className = 'nav-toggle';
+    navToggle.setAttribute('aria-label', 'Menu');
+    navToggle.innerHTML = '<i class="fas fa-bars"></i>';
+    navContainer.insertBefore(navToggle, navContainer.querySelector('.nav-links'));
+
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = navToggle.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
+    });
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            const icon = navToggle.querySelector('i');
+            icon.classList.add('fa-bars');
+            icon.classList.remove('fa-times');
         });
     });
 
@@ -61,10 +84,14 @@
     }
 
     privacyLink.addEventListener('click', (e) => {
-        e.preventDefault(); e.stopPropagation(); openModal(privacyModal);
+        e.preventDefault();
+        e.stopPropagation();
+        openModal(privacyModal);
     });
     termsLink.addEventListener('click', (e) => {
-        e.preventDefault(); e.stopPropagation(); openModal(termsModal);
+        e.preventDefault();
+        e.stopPropagation();
+        openModal(termsModal);
     });
     window.closeModal = (modalId) => closeModal(modalId);
     window.addEventListener('click', (e) => {

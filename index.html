@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Welcome to the online world of Diego Lucas — author of The Scarabs of Seth.">
   <title>Diego Lucas</title>
-  <!-- Font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -51,7 +51,7 @@
             <span><i class="fa fa-file-alt sky-accent"></i> 482 pages</span>
           </div>
           <div class="hero-cta">
-            <a href="#books" class="btn btn-sky"><i class="fas fa-book-open" style="margin-right: 8px;"></i>Explore the
+            <a href="#books" class="btn btn-sky"><i class="fas fa-book-open"></i>Explore the
               Books</a>
           </div>
         </div>
@@ -99,7 +99,7 @@
 
           <!-- Card 3: The Wound Shattering -->
           <div class="book-card animate-on-scroll">
-            <img class="card-cover-img" src="assets/images/The%20Wound%20Shattering.tiff" alt="The Wound Shattering">
+            <img class="card-cover-img" src="assets/images/The%20Wound%20Shattering.jpeg" alt="The Wound Shattering">
             <h3 class="card-title" title="The Wound Shattering">The Wound Shattering</h3>
             <div class="card-year">Coming Soon</div>
             <div class="card-teaser">
@@ -143,7 +143,7 @@
 
     <!-- Newsletter / Contact -->
     <section id="contact" class="section section-light">
-      <div class="container" style="text-align: center;">
+      <div class="container">
         <h2 class="section-title animate-on-scroll">Stay in the loop</h2>
         <p class="animate-on-scroll contact-subtext">Sign up for updates on new releases, events, and exclusive content.
         </p>
@@ -159,8 +159,8 @@
     <div class="container footer-content">
       <div>© 2024–2026 by Diego Lucas. All rights reserved.</div>
       <div class="footer-links">
-        <a href="#" id="privacyLink">Privacy</a>
-        <a href="#" id="termsLink">Terms</a>
+        <button id="privacyLink" class="footer-link-btn">Privacy</button>
+        <button id="termsLink" class="footer-link-btn">Terms</button>
         <a href="#"><i class="fas fa-arrow-up"></i> Back to top</a>
       </div>
     </div>
@@ -171,11 +171,11 @@
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>
       <h2>Privacy Policy</h2>
-      <p style="margin-bottom: 1.2rem;">Last updated: 2026</p>
-      <p style="margin-bottom: 1.2rem;">Diego Lucas ("we", "us", or "our") operates the diegolucas.com website. This
+      <p class="modal-text">Last updated: April 2026</p>
+      <p class="modal-text">Diego Lucas ("we", "us", or "our") operates the diegolucas.com website. This
         page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our
         site.</p>
-      <p style="margin-bottom: 1.2rem;">We collect email addresses only when voluntarily provided (e.g., newsletter
+      <p class="modal-text">We collect email addresses only when voluntarily provided (e.g., newsletter
         signup). We do not share your information with third parties.</p>
       <p>This site uses local storage and cookies only for essential functionality. No tracking or advertising cookies
         are used. For any questions, please contact us via the social channels provided.</p>
@@ -186,14 +186,16 @@
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('termsModal')">&times;</button>
       <h2>Terms of Use</h2>
-      <p style="margin-bottom: 1.2rem;">By accessing this website, you agree to be bound by these terms. All content © by
+      <p class="modal-text">By accessing this website, you agree to be bound by these terms. All content ©
+        by
         Diego Lucas. You may not reproduce, distribute, or transmit any material without prior written permission.</p>
-      <p style="margin-bottom: 1.2rem;">The information provided on this site is for general informational purposes
+      <p class="modal-text">The information provided on this site is for general informational purposes
         only. We reserve the right to modify these terms at any time.</p>
       <p>Links to external sites (e.g., Amazon) are provided for convenience; we are not responsible for their content
         or practices.</p>
     </div>
   </div>
+
   <!-- JavaScript -->
   <script src="js/script.js"></script>
 </body>
