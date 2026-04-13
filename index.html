@@ -116,45 +116,65 @@
 
     <!-- Author Section -->
     <section id="author" class="section">
-      <div class="container author-flex">
-        <div class="author-photo animate-on-scroll">
-          <img src="assets/images/Diego%20Lucas.jpeg" alt="Diego Lucas">
-        </div>
-        <div class="author-bio animate-on-scroll">
-          <h3>About the Author</h3>
-          <p>Diego Lucas has always felt a deep connection to the ancient world, with a particular fascination for
-            Egypt. Inspired by <em>Tomb Raider</em> and <em>The Mummy</em> (1999), he once dreamt of becoming an
-            archaeologist. However, upon realising that books allowed him to create his own expeditions, he chose the
-            path of writing instead.</p>
-          <p>From an early age, Diego nurtured a passion for reading, which soon evolved into a desire to tell his own
-            stories. At the age of 12, he created his first character, Alex Canyon, giving life to <em>The Scarabs of
-              Seth</em> – the novel that marked the beginning of his journey as a writer.</p>
-          <div class="social-links">
-            <a href="https://instagram.com/diegotheauthor" aria-label="Instagram" target="_blank"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.goodreads.com/diegolucas" aria-label="Goodreads" target="_blank"><i
-                class="fab fa-goodreads-g"></i></a>
-            <a href="https://www.amazon.com/author/diegolucas" aria-label="Amazon Author Page" target="_blank"><i
-                class="fab fa-amazon"></i></a>
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">About the Author</h2>
+        <div class="author-flex">
+          <div class="author-photo animate-on-scroll">
+            <img src="assets/images/Diego%20Lucas.jpeg" alt="Diego Lucas">
+          </div>
+          <div class="author-bio animate-on-scroll">
+            <p>Diego Lucas has always felt a deep connection to the ancient world, with a particular fascination for
+              Egypt. Inspired by <em>Tomb Raider</em> and <em>The Mummy</em> (1999), he once dreamt of becoming an
+              archaeologist. However, upon realising that books allowed him to create his own expeditions, he chose the
+              path of writing instead.</p>
+            <p>From an early age, Diego nurtured a passion for reading, which soon evolved into a desire to tell his own
+              stories. At the age of 12, he created his first character, Alex Canyon, giving life to <em>The Scarabs of
+                Seth</em> – the novel that marked the beginning of his journey as a writer.</p>
+            <div class="social-links">
+              <a href="https://instagram.com/diegotheauthor" aria-label="Instagram" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://www.goodreads.com/diegolucas" aria-label="Goodreads" target="_blank"><i
+                  class="fab fa-goodreads-g"></i></a>
+              <a href="https://www.amazon.com/author/diegolucas" aria-label="Amazon Author Page" target="_blank"><i
+                  class="fab fa-amazon"></i></a>
+            </div>
           </div>
         </div>
       </div>
+      </div>
     </section>
 
-    <!-- Newsletter / Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="section section-light">
       <div class="container">
-        <h2 class="section-title animate-on-scroll">Stay in the loop</h2>
-        <p class="animate-on-scroll contact-subtext">Sign up for updates on new releases, events, and exclusive content.
-        </p>
-        <div class="animate-on-scroll newsletter-form">
-          <input type="email" placeholder="Your email address" class="newsletter-input">
-          <button class="btn btn-sky newsletter-btn">Subscribe</button>
+        <h2 class="section-title animate-on-scroll">Get in touch</h2>
+        <p class="animate-on-scroll contact-subtext">Questions, rights inquiries, or just want to say hello? Send a
+          message.</p>
+        <div class="animate-on-scroll contact-form-wrapper">
+          <form action="https://formspree.io/f/https://formspree.io/f/xojyqnpq" method="POST" class="contact-form">
+            <!-- Redirect after success -->
+            <input type="hidden" name="_next" value="https://diegolucas.com/thanks.html">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Your message..."
+                rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-sky">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
       <div>© 2024–2026 by Diego Lucas. All rights reserved.</div>
@@ -166,7 +186,7 @@
     </div>
   </footer>
 
-  <!-- Modals -->
+  <!-- Footer Modals -->
   <div class="modal" id="privacyModal">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('privacyModal')">&times;</button>

@@ -18,6 +18,11 @@
     --transition-smooth: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Lora", serif;
     background-color: var(--bg-primary);
@@ -256,7 +261,7 @@ img {
 }
 
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 56px;
     text-align: center;
 }
@@ -386,36 +391,64 @@ img {
     color: var(--accent-sky);
 }
 
-/* Newsletter form styling */
-.newsletter-form {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.newsletter-input {
-    padding: 16px 28px;
-    border-radius: 60px;
-    border: 1px solid var(--border-light);
-    width: 300px;
-    font-size: 1rem;
-    outline: none;
-    font-family: inherit;
-}
-
-.newsletter-btn {
-    border: none;
-    cursor: pointer;
-    padding: 16px 36px;
-}
-
+/* ========== CONTACT FORM ========== */
 .contact-subtext {
     font-size: 1.3rem;
     max-width: 600px;
     margin: 0 auto 40px;
     text-align: center;
     color: var(--text-secondary);
+}
+
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.form-input {
+    padding: 14px 20px;
+    border-radius: 40px;
+    border: 1px solid var(--border-light);
+    font-size: 1rem;
+    font-family: "Lora", serif;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: white;
+}
+
+.form-input:focus {
+    border-color: var(--accent-sky);
+    box-shadow: 0 0 0 3px rgba(63, 148, 227, 0.1);
+}
+
+.form-textarea {
+    border-radius: 20px;
+    resize: vertical;
+}
+
+.contact-form .btn {
+    align-self: center;
+    padding: 14px 36px;
 }
 
 /* ========== FOOTER ========== */
@@ -583,6 +616,10 @@ img {
         order: -1;
     }
 
+    .author-photo img {
+        width: 50%;
+    }
+
     .author-flex {
         flex-direction: column;
         text-align: center;
@@ -601,6 +638,10 @@ img {
 @media (max-width: 750px) {
     .books-grid {
         grid-template-columns: 1fr;
+    }
+
+    .author-photo img {
+        width: 60%;
     }
 
     .footer-content {
@@ -645,17 +686,17 @@ img {
         font-size: 1.4rem;
     }
 
+    .author-photo img {
+        width: 70%;
+    }
+
+    .contact-form .btn {
+        align-self: center;
+        width: 100%;
+    }
+
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-}
-
-html {
-    scroll-padding-top: 80px;
-    scroll-behavior: smooth;
-}
-
-.sky-accent {
-    color: var(--accent-sky);
 }
