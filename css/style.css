@@ -451,6 +451,12 @@ img {
     padding: 14px 36px;
 }
 
+.form-status {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
+
 /* ========== FOOTER ========== */
 .footer {
     padding: 40px 0;

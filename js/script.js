@@ -68,6 +68,47 @@
         });
     });
 
+    // Contact form submission (Formspree via fetch)
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const form = e.target;
+            const statusEl = document.getElementById('formStatus');
+            const submitBtn = form.querySelector('button[type="submit"]');
+
+            // Show sending state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            statusEl.innerHTML = '';
+
+            try {
+                const response = await fetch('https://formspree.io/f/xojyqnpq', {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Redirect to thank you page
+                    window.location.href = 'thanks.html';
+                } else {
+                    const errorData = await response.json();
+                    statusEl.innerHTML = `<p style="color: #c00;">Error: ${errorData.error || 'Please try again.'}</p>`;
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Send Message';
+                }
+            } catch (error) {
+                statusEl.innerHTML = '<p style="color: #c00;">Network error. Please check your connection.</p>';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            }
+        });
+    }
+
     // Modals
     const privacyLink = document.getElementById('privacyLink');
     const termsLink = document.getElementById('termsLink');

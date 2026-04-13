@@ -150,10 +150,9 @@
         <h2 class="section-title animate-on-scroll">Get in touch</h2>
         <p class="animate-on-scroll contact-subtext">Questions, rights inquiries, or just want to say hello? Send a
           message.</p>
+
         <div class="animate-on-scroll contact-form-wrapper">
-          <form action="https://formspree.io/f/xojyqnpq" method="POST" class="contact-form">
-            <!-- Redirect after success -->
-            <input type="hidden" name="_next" value="https://diegolucas.com/thanks.html">
+          <form id="contactForm" class="contact-form">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
@@ -169,6 +168,7 @@
             </div>
             <button type="submit" class="btn btn-sky">Send Message</button>
           </form>
+          <div id="formStatus" class="form-status"></div>
         </div>
       </div>
     </section>
