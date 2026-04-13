@@ -622,7 +622,7 @@ img {
         order: -1;
     }
 
-    .author-photo img {
+    .author-photo {
         width: 50%;
     }
 
@@ -646,7 +646,7 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .author-photo img {
+    .author-photo {
         width: 60%;
     }
 
@@ -692,7 +692,7 @@ img {
         font-size: 1.4rem;
     }
 
-    .author-photo img {
+    .author-photo {
         width: 70%;
     }
 
