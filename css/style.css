@@ -57,6 +57,13 @@ img {
     height: auto;
 }
 
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
 /* ========== NAVIGATION ========== */
 .nav-bar {
     position: fixed;
@@ -226,6 +233,10 @@ img {
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 24px;
+}
+
+.sky-accent {
+    color: var(--accent-sky);
 }
 
 .hero-cta {
