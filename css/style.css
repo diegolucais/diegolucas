@@ -120,7 +120,7 @@ select {
     text-decoration: none;
     color: var(--text-primary);
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color 0.2s;
 }
 
@@ -217,13 +217,13 @@ select {
 }
 
 .hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     line-height: 1.1;
     margin-bottom: 16px;
 }
 
 .hero-subhead {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 300;
     color: var(--text-secondary);
     margin-bottom: 24px;
@@ -375,11 +375,6 @@ select {
     border: 3px solid white;
 }
 
-.author-bio h3 {
-    font-size: 2rem;
-    margin-bottom: 24px;
-}
-
 .author-bio p {
     font-size: 1.1rem;
     color: #3a3a44;
@@ -404,15 +399,15 @@ select {
 
 /* ========== CONTACT FORM ========== */
 .contact-subtext {
-    font-size: 1.3rem;
-    max-width: 600px;
-    margin: 0 auto 40px;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 60px;
     text-align: center;
     color: var(--text-secondary);
 }
 
 .contact-form-wrapper {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
